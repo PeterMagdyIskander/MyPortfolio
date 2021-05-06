@@ -75,7 +75,7 @@ export const App = () =>{
         <div className="MainDiv">
         <h1 className="title"> Peter Iskander</h1>
         <div className="Project">
-          <h3 className="titleOfProject">LogicGates Simulator </h3>
+          <h3 className="titleOfProject">Logic Gates Simulator </h3>
           <div className="videoContainer" onClick={() =>  window.open("https://github.com/PeterMagdyIskander/LogicGateSimulator", "_blank")}> video here</div>
           <p className="description">Used java to create blablabla</p>
 
