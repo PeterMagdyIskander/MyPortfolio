@@ -1,6 +1,5 @@
 import {useState} from'react';
 import styled from "styled-components";
-import logo from './logo.svg';
 import './App.css';
 import { BiArrowToTop } from "react-icons/bi";
 import { BiArrowToBottom } from "react-icons/bi";
@@ -22,27 +21,27 @@ const Menu=styled.div`
   align-items:center;
   justify-content:center;
   flex-direction:row;
-  background:#ffffff;
+  background:#00A36C;
 `;
 
 const MenuButtom=styled.button`
   width:150px;
   height:34px;
   border:0;
-  color: #45424d;
+  color: #000000;
   background:transparent;
   font-size:16px;
   font-weight:100;
-  &:hover { color:#8f44fd;}
+  &:hover { color:#90EE90;}
 `;
 
 const Burger=styled.button`
   position:absolute;
   z-index:1;
   top:10px;
-  left:10px;
+  right:10px;
   color:
-  ${p=>p.isOpen ? "#45424d" : "#45424d"};
+  ${p=>p.isOpen ? "#00A36C" : "#00A36C"};
 `;
 
 const BurgerIcon=styled.span` font-size:36px;`;
@@ -52,7 +51,7 @@ const Content=styled.div`
   transition: transform 0.45s;
 `;
 
-export const NavBar = () =>{
+export const App = () =>{
   const [isOpen, setOpen]=useState(false);
   return(
     <Wrapper>
@@ -73,14 +72,12 @@ export const NavBar = () =>{
           <MenuButtom onClick={()=> window.open("https://www.linkedin.com/in/peter-iskander-17b9501b1/", "_blank")}> <FaLinkedin />Linkedin</MenuButtom>
           <MenuButtom onClick={()=> window.open("https://github.com/PeterMagdyIskander", "_blank")}> <FaGithub />Github</MenuButtom>
         </Menu>
-        <div className="App">
-      <header className="App-header">
-       
-      </header>
-    </div>
+        <div className="MainDiv">
+        <h1 id="title"> Peter Iskander</h1>
+        </div>
       </Content>
     </Wrapper>
   );
 };
 
-export default NavBar;
+export default App;
