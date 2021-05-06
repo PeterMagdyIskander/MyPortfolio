@@ -12,9 +12,33 @@
   color: white;
 }
 
-#title{
-  align-items: left;
+.title{
+  text-align: left;
+  padding-left:25px;
   padding-top: 10px;
-  padding-left: 35px;
   color:#00A36C;
 }
+.Project{
+  text-align: center;
+}
+
+.titleOfProject{
+  color:#00A36C;
+}
+
+.description{
+  
+  color:#00A36C;
+}
+
+.videoContainer{
+  margin: auto;
+  text-align: center;
+  border-radius: 25px;
+  width: 852px;
+  height: 480px;
+  border-style: solid;
+  color:green;
+  background-color: #ffffff;
+}
+
