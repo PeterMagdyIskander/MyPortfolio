@@ -22,6 +22,7 @@ const Menu=styled.div`
   justify-content:center;
   flex-direction:row;
   background:#00A36C;
+  background-image: linear-gradient(to bottom right, #0BDA51, #00A36C);
 `;
 
 const MenuButtom=styled.button`
@@ -67,7 +68,7 @@ export const App = () =>{
       </Burger>
       <Content isOpen={isOpen}>
         <Menu>
-          <MenuButtom>My Work</MenuButtom>
+          <MenuButtom >My Work</MenuButtom>
           <MenuButtom>CV</MenuButtom>
           <MenuButtom onClick={()=> window.open("https://www.linkedin.com/in/peter-iskander-17b9501b1/", "_blank")}> <FaLinkedin />Linkedin</MenuButtom>
           <MenuButtom onClick={()=> window.open("https://github.com/PeterMagdyIskander", "_blank")}> <FaGithub />Github</MenuButtom>

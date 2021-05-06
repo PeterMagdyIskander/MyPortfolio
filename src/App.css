@@ -17,6 +17,7 @@
   padding-left:25px;
   padding-top: 10px;
   color:#00A36C;
+  color: linear-gradient(to bottom right, #0BDA51, #00A36C);
 }
 .Project{
   text-align: center;
