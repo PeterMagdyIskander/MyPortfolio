@@ -58,14 +58,13 @@ const Content = styled.div`
 const Project = (props) => {
   return (
     <article className="card">
-      <h3 className="titleOfProject">{props.projectName}</h3>
-      <div
-        className="videoContainer"
+      <h3
+        className="projectTitle"
         onClick={() => window.open(props.githubRepo, "_blank")}
       >
-        {" "}
-        video here
-      </div>
+        {props.projectName}
+      </h3>
+      <div className="videoContainer">video here</div>
       <p className="description">{props.description}</p>
     </article>
   );
@@ -109,9 +108,21 @@ export const App = () => {
         <div className="MainDiv">
           <h1 className="title"> Peter Iskander</h1>
           <section className="card-list">
-            <Project projectName="Logic Gates Simulator" description="used java blablabla" ></Project>
-            <Project projectName="Twitch Bot" description="used Python blablabla" ></Project>
-            <Project projectName="Food Catering" description="used java blablabla" ></Project>
+            <Project
+              projectName="Logic Gates Simulator"
+              description="used java blablabla"
+              githubRepo="https://github.com/PeterMagdyIskander/LogicGateSimulator"
+            ></Project>
+            <Project
+              projectName="Twitch Bot"
+              description="used Python blablabla"
+              githubRepo="https://github.com/PeterMagdyIskander/TwitchBot"
+            ></Project>
+            <Project
+              projectName="This Portofolio"
+              description="used ReactJS blablabla"
+              githubRepo="https://github.com/PeterMagdyIskander/MyPortofolio"
+            ></Project>
           </section>
         </div>
       </Content>

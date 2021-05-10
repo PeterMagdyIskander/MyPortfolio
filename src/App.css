@@ -20,19 +20,14 @@
   padding-top: 10px;
   color:#00A36C;
   }
-.Project{
-  text-align: center;
-}
 
-.titleOfProject{
-  color:#00A36C;
+  .description,.projectTitle{
+    color:#00A36C;
+  }
+.projectTitle:hover{
+  color:whitesmoke;
+  cursor: pointer;
 }
-
-.description{
-  
-  color:#00A36C;
-}
-
 .videoContainer{
   margin: auto;
   text-align: center;
