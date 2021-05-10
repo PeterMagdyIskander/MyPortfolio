@@ -110,10 +110,8 @@ export const App = () => {
           <h1 className="title"> Peter Iskander</h1>
           <section className="card-list">
             <Project projectName="Logic Gates Simulator" description="used java blablabla" ></Project>
-            <Project projectName="Logic Gates Simulator" description="used java blablabla" ></Project>
-            <Project projectName="Logic Gates Simulator" description="used java blablabla" ></Project>
-            <Project projectName="Logic Gates Simulator" description="used java blablabla" ></Project>
-            <Project projectName="Logic Gates Simulator" description="used java blablabla" ></Project>
+            <Project projectName="Twitch Bot" description="used Python blablabla" ></Project>
+            <Project projectName="Food Catering" description="used java blablabla" ></Project>
           </section>
         </div>
       </Content>
