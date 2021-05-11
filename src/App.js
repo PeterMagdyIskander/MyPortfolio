@@ -21,8 +21,7 @@ const Menu = styled.div`
   align-items: center;
   justify-content: center;
   flex-direction: row;
-  background: #00a36c;
-  background-image: linear-gradient(to bottom right, #0bda51, #00a36c);
+  background:#00A36C;
 `;
 
 const MenuButtom = styled.button`
@@ -33,8 +32,9 @@ const MenuButtom = styled.button`
   background: transparent;
   font-size: 16px;
   font-weight: 100;
+  cursor: pointer;
   &:hover {
-    color: #90ee90;
+    color: #ffffff;
   }
 `;
 
@@ -48,6 +48,7 @@ const Burger = styled.button`
 
 const BurgerIcon = styled.span`
   font-size: 36px;
+  cursor: pointer;
 `;
 
 const Content = styled.div`
@@ -63,7 +64,7 @@ const Project = (props) => {
         onClick={() => window.open(props.githubRepo, "_blank")}
       >
         {props.projectName}
-        <span className="tooltiptext">Click to go to the github repo</span>
+        <span className="tooltiptext">github repo</span>
       </h3>
       <div className="videoContainer">video here</div>
       <p className="description">{props.description}</p>
@@ -82,8 +83,9 @@ export const App = () => {
       </Burger>
       <Content isOpen={isOpen}>
         <Menu>
-          <MenuButtom>My Work</MenuButtom>
-          <MenuButtom>CV</MenuButtom>
+          <MenuButtom onClick={() =>
+              window.open("https://drive.google.com/file/d/1tm8OLaEUA12Cn11V-dy8Q8ApFs8SPLIU/view?usp=sharing", "_blank")
+            }>CV</MenuButtom>
           <MenuButtom
             onClick={() =>
               window.open(

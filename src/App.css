@@ -27,7 +27,7 @@
 
   .projectTitle .tooltiptext {
     visibility: hidden;
-    width: 175px;
+    width: 90px;
     background-color: black;
     color: #fff;
     text-align:center;
@@ -35,6 +35,7 @@
     font-size: small;
     margin-left: 3px;
     margin-top: 30px;
+    padding:2px;
     /* Position the tooltip */
     position: absolute;
     z-index: 1;
