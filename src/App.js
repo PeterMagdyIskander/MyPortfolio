@@ -63,6 +63,7 @@ const Project = (props) => {
         onClick={() => window.open(props.githubRepo, "_blank")}
       >
         {props.projectName}
+        <span className="tooltiptext">Click to go to the github repo</span>
       </h3>
       <div className="videoContainer">video here</div>
       <p className="description">{props.description}</p>
