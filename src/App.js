@@ -4,7 +4,9 @@ import "./App.css";
 import { BiArrowToTop } from "react-icons/bi";
 import { BiArrowToBottom } from "react-icons/bi";
 import { FaGithub, FaLinkedin } from "react-icons/fa";
-
+import logicGate from "./files/logicgate.jpg";
+import react from "./files/react.PNG";
+import bot from "./files/twitchbot.PNG";
 const Wrapper = styled.div`
   position: relative;
   overflow: hidden;
@@ -66,7 +68,7 @@ const Project = (props) => {
         {props.projectName}
         <span className="tooltiptext">github repo</span>
       </h3>
-      <div className="videoContainer">video here</div>
+      <img className="imgContainer" src={props.src} />
       <p className="description">{props.description}</p>
     </article>
   );
@@ -113,18 +115,21 @@ export const App = () => {
           <section className="card-list">
             <Project
               projectName="Logic Gates Simulator"
-              description="used java blablabla"
+              description="Used a customized binary tree which each node corresponds to a gate, and traversed in the binary tree using DFS "
               githubRepo="https://github.com/PeterMagdyIskander/LogicGateSimulator"
+              src={logicGate}
             ></Project>
             <Project
               projectName="Twitch Bot"
-              description="used Python blablabla"
+              description="Used Python to write in twitch chat using cmd"
               githubRepo="https://github.com/PeterMagdyIskander/TwitchBot"
+              src={bot}
             ></Project>
             <Project
               projectName="This Portofolio"
-              description="used ReactJS blablabla"
+              description="Used ReactJS to create this website"
               githubRepo="https://github.com/PeterMagdyIskander/MyPortofolio"
+              src={react}
             ></Project>
           </section>
         </div>
