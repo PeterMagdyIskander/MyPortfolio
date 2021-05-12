@@ -68,7 +68,7 @@ const Project = (props) => {
         {props.projectName}
         <span className="tooltiptext">github repo</span>
       </h3>
-      <img className="imgContainer" src={props.src} />
+      <img className="imgContainer" src={props.src}  alt={props.meaning}/>
       <p className="description">{props.description}</p>
     </article>
   );
@@ -118,18 +118,21 @@ export const App = () => {
               description="Used a customized binary tree which each node corresponds to a gate, and traversed in the binary tree using DFS "
               githubRepo="https://github.com/PeterMagdyIskander/LogicGateSimulator"
               src={logicGate}
+              meaning="code snippit"
             ></Project>
             <Project
               projectName="Twitch Bot"
               description="Used Python to write in twitch chat using cmd"
               githubRepo="https://github.com/PeterMagdyIskander/TwitchBot"
               src={bot}
+              meaning="code snippit"
             ></Project>
             <Project
               projectName="This Portofolio"
               description="Used ReactJS to create this website"
               githubRepo="https://github.com/PeterMagdyIskander/MyPortofolio"
               src={react}
+              meaning="code snippit"
             ></Project>
           </section>
         </div>
